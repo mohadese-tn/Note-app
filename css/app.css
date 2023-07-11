@@ -1,0 +1,118 @@
+ /* ---- import fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Paytone+One&family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
+/* ----reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Paytone One', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+/* -------start styling */
+.wrapper{
+    padding: 50px 0;  
+    background-image: URL(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}    
+.container{
+    min-height: 100%;
+    background-color: rgba(22, 22, 22, 0.09);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(5px);
+}
+.title{
+    color: aliceblue;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: 5px;
+}
+.input-field{
+    text-align: left;
+    display: block;
+    margin: 0 auto;
+    width: 450px;
+    padding: 0.7rem 1rem;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    background-color: #F0F2B6;
+}
+.input-field:focus{
+    border: #224B0C 1px wavy;
+}
+/* ----Color Section */
+.color-wrapper{
+    position: relative;
+}
+.color-select {
+    display: flex;
+    padding: 1rem 0;
+    position: absolute;
+    top: -5px;
+    right: 53.5%;
+}
+
+.color-box {
+    border: solid 1px #929292;
+    border-radius: 50%;
+    height: 18px;
+    width: 18px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.color-box:hover{
+    scale: 1.1;
+}
+/* ----save/delete Button Section */
+.button-wrapper{
+    position: relative;  
+}
+.btn{
+    position: absolute;
+    top: 0.68rem;
+    width: 26px;
+    height: 19px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color:inherit;
+}
+.btn:hover{
+    scale: 1.05;
+}
+.btn-save{
+    border: 1.5px solid #C7D36F;
+    color: #C7D36F;
+    right: 34%;
+}
+.btn-delete{
+    border: 1.5px solid #F0F2B6;
+    color: #F0F2B6;
+    right: 31.5%;
+}
+/* ----Notes Section  */
+#note-wrapper{
+    margin-top: 50px ;
+    margin-left: 60px; 
+}
+.note{
+    background-color: #F0F2B6;
+    margin: 10px ; 
+    border-radius: 0.4rem;
+    cursor: pointer;
+    max-width: 250px;
+}
+.note-txt{
+    font-size: 0.85rem;
+    font-weight: 500;
+    padding: 0.5rem 0.3rem;
+}
